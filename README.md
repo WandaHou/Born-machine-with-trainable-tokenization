@@ -11,14 +11,6 @@ Matrix Product States (MPS) are a type of tensor network that originated in quan
 - Efficient sampling and probability calculations
 - GPU acceleration support
 
-## Installation
-
-To install the package, run:
-
-```bash
-pip install quantum-mps
-```
-
 ## Requirements
 
 - Python 3.8+
