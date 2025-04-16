@@ -25,12 +25,6 @@ Matrix Product States (MPS) are a type of tensor network that originated in quan
 # Install all required dependencies
 pip install -r requirements.txt
 
-## Quick Start
-
-To use the model, follow these steps:
-
-1. Import the necessary modules:
-
 ```
 
 ## Tutorial
