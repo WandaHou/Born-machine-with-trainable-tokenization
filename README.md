@@ -14,10 +14,21 @@ Matrix Product States (MPS) are a type of tensor network that originated in quan
 ## Requirements
 
 - Python 3.8+
-- PyTorch
+- PyTorch 1.13.1
 - NumPy
 - Matplotlib
 - Jupyter (for running the tutorial)
+
+## Installation
+
+```bash
+# Install all required dependencies
+pip install -r requirements.txt
+
+# If you encounter the "Trying to backward through the graph a second time" error
+# Edit the training loop in tutorial.ipynb or your code to add retain_graph=True:
+# loss.backward(retain_graph=True)  # Instead of just loss.backward()
+```
 
 ## Quick Start
 
