@@ -25,11 +25,6 @@ Matrix Product States (MPS) are a type of tensor network that originated in quan
 # Install all required dependencies
 pip install -r requirements.txt
 
-# If you encounter the "Trying to backward through the graph a second time" error
-# Edit the training loop in tutorial.ipynb or your code to add retain_graph=True:
-# loss.backward(retain_graph=True)  # Instead of just loss.backward()
-```
-
 ## Quick Start
 
 To use the model, follow these steps:
