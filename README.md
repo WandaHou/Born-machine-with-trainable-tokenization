@@ -79,6 +79,7 @@ The model supports training with custom loss functions and includes specialized 
 import torch.optim as optim
 from main import iso_op
 
+model = MPS(n=seq_length, phy_dim=2, bond_dim=8, voc_size=6)
 optimizer = optim.Adam([
     {'params': model.mps_blocks, 'name': 'iso'},
     {'params': model.emb.parameters(), 'name': 'emb'}
@@ -89,6 +90,7 @@ optimizer.zero_grad()
 loss.backward()
 iso_op(optimizer, loss)
 optimizer.step()
+model.reset()
 ```
 
 ## Features
